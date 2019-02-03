@@ -45,9 +45,4 @@
     <email>my@email.com</email>
     <source>https://github.com/DelMaiz/Beta</source>
   </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary>Beta</summary>
-    <description>Cine, series, música...</description>
-    <platform>all</platform>
-  </extension>
 </addon>
