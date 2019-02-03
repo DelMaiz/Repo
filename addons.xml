@@ -155,6 +155,22 @@
         </assets>
     </extension>
 </addon>
+
+<addon id="resource.as" name="Atari Cleaner" version="1.0.0" provider-name="Atari Corp.">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.service" library="startup.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Atari Cleaner</summary>
+    <description lang="en">DO NOT LAUNCH/RUN FROM MY ADD-ONS (This Will Auto Launch At Startup)</description>
+	<disclaimer lang="en">You May Disable! Configure From Within Add-On Settings</disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
 </addons>
 
   
