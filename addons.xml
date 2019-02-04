@@ -34,7 +34,7 @@
   </extension>
 </addon>
 
-<addon id="repository.atari" name="[COLOR purple]Atari[/COLOR] Repo" version="1.0.1" provider-name="Atari Corp.">
+<addon id="repository.atari" name="[COLOR orangered]Atari Corp.[/COLOR] Repo" version="1.0.1" provider-name="Atari Corp.">
     <requires>
         <import addon="xbmc.addon" version="12.0.0"/>
     </requires>
