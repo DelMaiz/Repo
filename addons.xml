@@ -196,7 +196,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.quasar" name="Quasar" version="0.9.78" provider-name="scakemyer">
+<addon id="plugin.video.quasar" name="Quasar" version="0.9.78" provider-name="Atari Corp.">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
         <import addon="xbmc.python" version="2.24.0" />
@@ -214,8 +214,8 @@
         <description lang="en">Quasar is a torrent finding and streaming engine. It doesn't go on torrent websites for legal reasons. However, it calls specially crafted add-ons (called providers) that are installed separately.[CR]This project is a fork of the well known, but no longer maintained Pulsar project from steeve.</description>
         <language>en el es de fi fr he hr it nl pt ro sk</language>
         <platform>all</platform>
-        <website>https://github.com/scakemyer/plugin.video.quasar</website>
-        <source>https://github.com/scakemyer/plugin.video.quasar</source>
+        <website>https://github.com//DelMaiz/Quasar</website>
+        <source>https://github.com//DelMaiz/Quasar</source>
         <forum>http://forum.kodi.tv/showthread.php?tid=257967</forum>
         <license>Non commercial. See https://github.com/scakemyer/plugin.video.quasar/blob/master/LICENSE</license>
         <assets>
