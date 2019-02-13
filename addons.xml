@@ -34,6 +34,8 @@
   </extension>
 </addon>
 
+
+
 <addon id="repository.atari" name="[COLOR orangered]Atari Corp.[/COLOR] Repo" version="1.0.2" provider-name="Atari Corp.">
     <requires>
         <import addon="xbmc.addon" version="12.0.0"/>
@@ -101,6 +103,8 @@
   </extension>
 </addon>
 
+
+
 <addon id="plugin.video.tvalacarta"
     name="tvalacarta"
     version="4.1.2"
@@ -127,6 +131,8 @@
   </extension>
 </addon>
 
+
+
 <addon id="resource.as" name="Atari Cleaner" version="1.0.0" provider-name="Atari Corp.">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -142,6 +148,8 @@
     <platform>all</platform>
   </extension>
 </addon>
+
+
 
 <addon id="script.module.urlresolver" name="URLResolver" version="5.0.23" provider-name="Atari Corp.">
 	<requires>
@@ -164,6 +172,8 @@
         <website>https://www.tvaddons.co</website>
 	</extension>
 </addon>
+
+
 
 <addon id="skin.atari" version="0.9.36" name="Atari" provider-name="Atari Corp.">
     <requires>
@@ -196,6 +206,8 @@
         </assets>
     </extension>
 </addon>
+
+
 
 <addon id="plugin.video.quasar" name="Quasar" version="0.9.78" provider-name="Atari Corp.">
     <requires>
