@@ -54,7 +54,6 @@
 </addon>
 
 
-
 <addon id="plugin.video.beta"
        name="Beta"
        version="1.0.1"
@@ -104,7 +103,6 @@
 </addon>
 
 
-
 <addon id="plugin.video.tvalacarta"
     name="tvalacarta"
     version="4.1.2"
@@ -132,7 +130,6 @@
 </addon>
 
 
-
 <addon id="resource.as" name="Atari Cleaner" version="1.0.0" provider-name="Atari Corp.">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -148,7 +145,6 @@
     <platform>all</platform>
   </extension>
 </addon>
-
 
 
 <addon id="script.module.urlresolver" name="URLResolver" version="5.0.23" provider-name="Atari Corp.">
@@ -172,7 +168,6 @@
         <website>https://www.tvaddons.co</website>
 	</extension>
 </addon>
-
 
 
 <addon id="skin.atari" version="0.9.36" name="Atari" provider-name="Atari Corp.">
@@ -208,7 +203,6 @@
 </addon>
 
 
-
 <addon id="plugin.video.quasar" name="Quasar" version="0.9.78" provider-name="Atari Corp.">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
@@ -240,6 +234,8 @@
         </assets>
     </extension>
 </addon>
+
+
 </addons>
 
   
