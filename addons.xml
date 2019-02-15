@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
 
-<addon id="repository.atari" name="[COLOR orangered]Atari Corp.[/COLOR] Repo" version="1.0.7" provider-name="Atari Corp.">
+<addon id="repository.atari" name="[COLOR gold]Atari Corp.[/COLOR] Repo" version="1.0.1" provider-name="Atari Corp.">
     <requires>
         <import addon="xbmc.addon" version="12.0.0"/>
     </requires>
@@ -19,7 +19,7 @@
 </addon>
 
 
-<addon id="plugin.video.alfa" name="Alfa" version="2.7.27" provider-name="Atari Corp.">
+<addon id="plugin.video.alfa" name="Alfa" version="1.0.1" provider-name="Atari Corp.">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.libtorrent" optional="true"/>
@@ -105,8 +105,8 @@
 
 <addon id="plugin.video.tvalacarta"
     name="tvalacarta"
-    version="4.1.2"
-    provider-name="tvalacarta">
+    version="1.0.1"
+    provider-name="Atari Corp.">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
@@ -130,7 +130,7 @@
 </addon>
 
 
-<addon id="resource.as" name="Atari Cleaner" version="1.0.0" provider-name="Atari Corp.">
+<addon id="resource.as" name="Atari Cleaner" version="1.0.1" provider-name="Atari Corp.">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
@@ -147,7 +147,7 @@
 </addon>
 
 
-<addon id="script.module.urlresolver" name="URLResolver" version="5.0.32" provider-name="Atari Corp.">
+<addon id="script.module.urlresolver" name="URLResolver" version="1.0.1" provider-name="Atari Corp.">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="plugin.video.youtube" optional="true" />
@@ -170,7 +170,7 @@
 </addon>
 
 
-<addon id="skin.atari" version="0.9.36" name="Atari" provider-name="Atari Corp.">
+<addon id="skin.atari" version="1.0.1" name="Atari" provider-name="Atari Corp.">
     <requires>
         <import addon="xbmc.gui" version="5.14.0"/>
         <import addon="script.skinshortcuts" version="0.4.0"/>
@@ -203,7 +203,7 @@
 </addon>
 
 
-<addon id="plugin.video.quasar" name="Quasar" version="0.9.78" provider-name="Atari Corp.">
+<addon id="plugin.video.quasar" name="Quasar" version="1.0.1" provider-name="Atari Corp.">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
         <import addon="xbmc.python" version="2.24.0" />
