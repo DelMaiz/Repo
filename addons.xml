@@ -170,7 +170,7 @@
 </addon>
 
 
-<addon id="skin.atari" version="1.0.1" name="Atari" provider-name="Atari Corp.">
+<addon id="skin.atari" version="1.0.2" name="Atari" provider-name="Atari Corp.">
     <requires>
         <import addon="xbmc.gui" version="5.14.0" />
         <import addon="script.skinshortcuts" version="0.4.0" />
