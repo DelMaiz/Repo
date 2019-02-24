@@ -130,7 +130,7 @@
 </addon>
 
 
-<addon id="plugin.video.ataritv" name="Atari TV" version="1.0.1" provider-name="Atari Corp.">
+<addon id="plugin.video.tvatari" name="Tv Atari" version="1.0.1" provider-name="Atari Corp.">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.livestreamer" />
@@ -141,8 +141,8 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en_gb">Atari TV</summary>
-    <description lang="en_gb">Atari TV</description>
+    <summary lang="en_gb">Tv Atari</summary>
+    <description lang="en_gb">Tv Atari</description>
     <disclaimer lang="en_gb"></disclaimer>
     <icon>icon.png</icon>
     <fanart>fanart.jpg</fanart>
