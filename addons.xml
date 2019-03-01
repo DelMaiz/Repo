@@ -302,6 +302,9 @@
     <summary lang="en">Atari Wizard</summary>
     <description lang="en">Kodi Build por Atari Corp.</description>
     <platform>all</platform>
+	  <assets>
+		<icon>icon.gif</icon>
+	  </assets>
   </extension>
 </addon>
 </addons>
