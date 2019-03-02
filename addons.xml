@@ -179,6 +179,46 @@
 </addon>
 
 
+<addon id="plugin.program.playatari" name="Play" version="1.0.1">
+  <requires>
+    <import addon="xbmc.python" version="2.25.0"/>
+    <import addon="script.module.dateutil"/>
+    <import addon="script.module.elementtree"/>
+    <import addon="script.module.kodi-six"/>
+    <import addon="script.module.requests"/>
+    <import addon="script.module.routing"/>
+    <import addon="plugin.video.youtube"/>
+    <import addon="vfs.libarchive" optional="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video game</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <!-- <reuselanguageinvoker>false</reuselanguageinvoker> -->
+    <platform>all</platform>
+    <summary lang="en_GB">Play</summary>
+    <description lang="en_GB">The Play (IAGL) is a FREE Kodi addon that will browse and launch games available from the Internet</description>
+    <summary lang="es_ES">Play</summary>
+    <description lang="es_ES">Play (IAGL) es un complemento gratuito para Kodi que explorará y lanzará juegos disponibles en Internet</description>
+    <summary lang="es_MX">Play</summary>
+    <description lang="es_MX">Play (IAGL) es un complemento gratuito para Kodi que explorará y lanzará juegos disponibles en Internet</description>
+    <license>CC BY-SA 4.0, GNU GENERAL PUBLIC LICENSE Version 2.0</license>
+    <forum>http://forum.kodi.tv/showthread.php?tid=231339</forum>
+    <source>https://github.com/DelMaiz/plugin.program.playatari</source>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+      <screenshot>support/media/screen1.jpg</screenshot>
+      <screenshot>support/media/screen2.jpg</screenshot>
+      <screenshot>support/media/screen3.jpg</screenshot>
+      <screenshot>support/media/screen4.jpg</screenshot>
+      <screenshot>support/media/screen5.jpg</screenshot>
+      <screenshot>support/media/screen6.jpg</screenshot>
+    </assets>
+  </extension>
+</addon>
+
+
 <addon id="resource.as" name="Atari Cleaner" version="1.0.1" provider-name="Atari Corp.">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
