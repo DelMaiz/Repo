@@ -56,7 +56,7 @@
 
 <addon id="plugin.video.beta"
        name="Beta"
-       version="1.0.1"
+       version="1.0.2"
        provider-name="Atari Corp.">
   <requires>
 	<import addon="xbmc.python" version="2.1.0"/>
@@ -69,15 +69,22 @@
     <import addon="script.module.httplib2" />
     <import addon="script.module.liveresolver" version="0.1.24" optional="true"/>
     <import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="plugin.video.youtube" optional="true" />
-    <import addon="script.module.urlresolver" optional="true"/>
-    <import addon="script.module.simplejson" />    
-     <import addon="script.module.livestreamer" optional="true"/>
-     <import addon="script.module.pyamf" optional="true"/>
+    <import addon="plugin.video.youtube" />
+    <import addon="script.module.urlresolver" />
+	<import addon="script.module.simplejson" />
+    <import addon="script.module.livestreamer" optional="true"/>
+    <import addon="script.module.pyamf" optional="true"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video</provides>
   </extension>
+  
+    <extension point="xbmc.addon.repository" name="Atari Repo">
+        <info>https://github.com/DelMaiz/Repo/raw/master/addons.xml</info>
+        <checksum>https://github.com/DelMaiz/Repo/raw/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://github.com/DelMaiz/Repo/raw/master</datadir>
+    </extension>
+	
   <extension point="xbmc.addon.metadata">
     <summary lang="es">Navega con Kodi por páginas web.</summary>
     <assets>
@@ -99,6 +106,12 @@
     <website>web</website>
     <email>my@email.com</email>
     <source>https://github.com/DelMaiz/Beta</source>
+  </extension>
+  
+  <extension point="xbmc.addon.metadata">
+    <summary>Beta</summary>
+    <description>Cine, series, música...</description>
+    <platform>all</platform>
   </extension>
 </addon>
 
