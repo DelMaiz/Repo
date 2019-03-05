@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
 
-<addon id="repository.atari" name="[COLOR gold]Atari Corp.[/COLOR] Repo" version="1.0.2" provider-name="Atari Corp.">
+<addon id="repository.atari" name="[COLOR gold]Atari Corp.[/COLOR] Repo" version="1.0.1" provider-name="Atari Corp.">
     <requires>
         <import addon="xbmc.addon" version="12.0.0"/>
     </requires>
@@ -19,7 +19,7 @@
 </addon>
 
 
-<addon id="plugin.video.alfa" name="Alfa" version="1.0.2" provider-name="Atari Corp.">
+<addon id="plugin.video.alfa" name="Alfa" version="1.0.1" provider-name="Atari Corp.">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.libtorrent" optional="true"/>
@@ -56,7 +56,7 @@
 
 <addon id="plugin.video.beta"
        name="Beta"
-       version="1.0.2"
+       version="1.0.1"
        provider-name="Atari Corp.">
   <requires>
 	<import addon="xbmc.python" version="2.1.0"/>
