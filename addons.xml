@@ -524,12 +524,19 @@
 
 
 
-
-
-
-
-
-</addon><addon id="script.module.metadatautils" name="Metadata and Artwork module" provider-name="Atari Corp." version="1.0.19">
+<addon id="repository.marcelveldt" name="Marcelveldt's BETA repository" provider-name="marcelveldt" version="1.0.1">
+	
+	<extension name="Marcelveldt's BETA repository" point="xbmc.addon.repository">
+		<info compressed="false">https://raw.githubusercontent.com/marcelveldt/repository.marcelveldt/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/marcelveldt/repository.marcelveldt/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/marcelveldt/repository.marcelveldt/master/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Kodi repository for beta/test versions of Marcelveldt's addons</summary>
+		<description lang="en">Kodi repository for beta/test versions of Marcelveldt's addons, for stable versions please just use the official Kodi repository. This repo is for test/beta versions of my work only</description>
+		<platform>all</platform>
+	</extension>
+</addon><addon id="script.module.metadatautils" name="Metadata and Artwork module" provider-name="marcelveldt" version="1.0.19">
     <requires>
         <import addon="xbmc.python" version="2.24.0" />
         <import addon="script.module.requests" version="2.3.0" />
@@ -548,10 +555,10 @@
             This product uses the TMDb API but is not endorsed or certified by TMDb
         </description>
         <license>Apache 2.0</license>
-        <source>https://github.com/Atari Corp./script.module.metadatautils</source>
+        <source>https://github.com/marcelveldt/script.module.metadatautils</source>
         <platform>all</platform>
     </extension>
-</addon><addon id="script.skin.helper.service" name="Skin Helper Service" provider-name="Atari Corp." version="1.1.24">
+</addon><addon id="script.skin.helper.service" name="Skin Helper Service" provider-name="marcelveldt" version="1.1.24">
 	<requires>
 		<import addon="xbmc.python" version="2.13.0" />
 		<import addon="xbmc.addon" version="12.0.0" />
@@ -601,9 +608,9 @@
 		<license>GPL v2.0</license>
 		<forum>http://forum.kodi.tv/showthread.php?tid=235676</forum>
 		<website />
-		<source>https://github.com/Atari Corp./script.skin.helper.service</source>
+		<source>https://github.com/marcelveldt/script.skin.helper.service</source>
 	</extension>
-</addon><addon id="resource.uisounds.titan.modern" name="Titan UI Sounds (Modern)" provider-name="Atari Corp.,mgonzales" version="1.0.0">
+</addon><addon id="resource.uisounds.titan.modern" name="Titan UI Sounds (Modern)" provider-name="marcelveldt,mgonzales" version="1.0.0">
   <requires>
     <import addon="kodi.resource" version="1.0.0" />
   </requires>
@@ -613,7 +620,7 @@
     <description lang="en">Titan UI Sounds (Modern)</description>
     <platform>all</platform>
   </extension>
-</addon><addon id="resource.uisounds.titan.classic" name="Titan UI Sounds (Classic)" provider-name="Atari Corp.,mgonzales" version="1.0.0">
+</addon><addon id="resource.uisounds.titan.classic" name="Titan UI Sounds (Classic)" provider-name="marcelveldt,mgonzales" version="1.0.0">
   <requires>
     <import addon="kodi.resource" version="1.0.0" />
   </requires>
@@ -623,7 +630,7 @@
     <description lang="en">Titan UI Sounds (Classic)</description>
     <platform>all</platform>
   </extension>
-</addon><addon id="resource.images.skinicons.wide" name="Skin Icons - Wide" provider-name="Atari Corp." version="1.0.3">
+</addon><addon id="resource.images.skinicons.wide" name="Skin Icons - Wide" provider-name="marcelveldt" version="1.0.3">
 	<extension compile="false" point="kodi.resource.images" type="skinicons" />
 	<requires>
 		<import addon="kodi.resource" version="1.0.0" />
@@ -633,7 +640,7 @@
 		<description lang="en">Skin Icons Pack - Wide</description>
 		<platform>all</platform>
 	</extension>
-</addon><addon id="resource.images.skinbackgrounds.titanium" name="Skin Backgrounds - Titanium" provider-name="Atari Corp." version="1.0.0">
+</addon><addon id="resource.images.skinbackgrounds.titanium" name="Skin Backgrounds - Titanium" provider-name="marcelveldt" version="1.0.0">
 	<extension compile="false" point="kodi.resource.images" type="skinbackgrounds" />
 	<requires>
 		<import addon="kodi.resource" version="1.0.0" />
@@ -643,7 +650,7 @@
 		<description lang="en">Skin Backgrounds Pack - Titanium</description>
 		<platform>all</platform>
 	</extension>
-</addon><addon id="resource.images.busyspinners.basic" name="Animated Busy Spinners Pack" provider-name="Atari Corp." version="1.0.1">
+</addon><addon id="resource.images.busyspinners.basic" name="Animated Busy Spinners Pack" provider-name="marcelveldt" version="1.0.1">
 	<extension compile="false" point="kodi.resource.images" type="busyspinners" />
 	<requires>
 		<import addon="kodi.resource" version="1.0.0" />
@@ -653,7 +660,7 @@
 		<description lang="en">Animated Busy Spinners Pack - Titan</description>
 		<platform>all</platform>
 	</extension>
-</addon><addon id="script.skinshortcuts" name="Skin Shortcuts" provider-name="BigNoid,Atari Corp." version="1.0.18">
+</addon><addon id="script.skinshortcuts" name="Skin Shortcuts" provider-name="BigNoid,marcelveldt" version="1.0.18">
 	<requires>
 		<import addon="xbmc.python" version="2.20.0" />
 		<import addon="script.module.simplejson" version="3.3.0" />
@@ -696,7 +703,7 @@
 		<fanart>fanart.jpg</fanart>
 	</assets>
 	</extension>
-</addon><addon id="script.module.simplecache" name="Simple Cache Module" provider-name="Atari Corp." version="1.0.16">
+</addon><addon id="script.module.simplecache" name="Simple Cache Module" provider-name="marcelveldt" version="1.0.16">
     <requires>
         <import addon="xbmc.python" version="2.24.0" />
     </requires>
@@ -705,10 +712,10 @@
         <summary>Provides a simple file- and memory based cache for Kodi addons</summary>
         <description>Provides a simple file- and memory based cache for Kodi addons</description>
         <license>Apache 2.0</license>
-        <source>https://github.com/Atari Corp./script.module.simplecache</source>
+        <source>https://github.com/marcelveldt/script.module.simplecache</source>
         <platform>all</platform>
     </extension>
-</addon><addon id="script.skin.helper.widgets" name="Skin Helper Service Widgets" provider-name="Atari Corp.,patrick-klein" version="1.0.38">
+</addon><addon id="script.skin.helper.widgets" name="Skin Helper Service Widgets" provider-name="marcelveldt,patrick-klein" version="1.0.38">
 	<requires>
 		<import addon="xbmc.python" version="2.24.0" />
 		<import addon="xbmc.addon" version="12.0.0" />
@@ -729,9 +736,9 @@
 		<license>GPL v2.0</license>
 		<forum>http://forum.kodi.tv/showthread.php?tid=235676</forum>
 		<website />
-		<source>https://github.com/Atari Corp./script.skin.helper.widgets</source>
+		<source>https://github.com/marcelveldt/script.skin.helper.widgets</source>
 	</extension>
-</addon><addon id="script.module.thetvdb" name="The TVDB API v2" provider-name="Atari Corp." version="1.0.27">
+</addon><addon id="script.module.thetvdb" name="The TVDB API v2" provider-name="marcelveldt" version="1.0.27">
     <requires>
         <import addon="xbmc.python" version="2.24.0" />
         <import addon="script.module.requests" version="2.3.0" />
@@ -744,10 +751,10 @@
         <summary>TheTVDB API v2 python module for Kodi</summary>
         <description>TheTVDB API v2 python module for Kodi</description>
         <license>Apache 2.0</license>
-        <source>https://github.com/Atari Corp./script.module.thetvdb</source>
+        <source>https://github.com/marcelveldt/script.module.thetvdb</source>
         <platform>all</platform>
     </extension>
-</addon><addon id="script.skin.helper.skinbackup" name="Skin Helper Service Skin Backup" provider-name="Atari Corp." version="1.0.19">
+</addon><addon id="script.skin.helper.skinbackup" name="Skin Helper Service Skin Backup" provider-name="marcelveldt" version="1.0.19">
 	<requires>
 		<import addon="xbmc.python" version="2.13.0" />
 		<import addon="xbmc.addon" version="12.0.0" />
@@ -763,9 +770,9 @@
 		<license>GPL v2.0</license>
 		<forum>http://forum.kodi.tv/showthread.php?tid=235676</forum>
 		<website />
-		<source>https://github.com/Atari Corp./script.skin.helper.skinbackup</source>
+		<source>https://github.com/marcelveldt/script.skin.helper.skinbackup</source>
 	</extension>
-</addon><addon id="script.skin.helper.colorpicker" name="Skin Helper Service ColorPicker" provider-name="Atari Corp." version="1.0.12">
+</addon><addon id="script.skin.helper.colorpicker" name="Skin Helper Service ColorPicker" provider-name="marcelveldt" version="1.0.12">
 	<requires>
 		<import addon="xbmc.python" version="2.24.0" />
 		<import addon="xbmc.addon" version="12.0.0" />
@@ -780,9 +787,9 @@
 		<license>GPL v2.0</license>
 		<forum>http://forum.kodi.tv/showthread.php?tid=235676</forum>
 		<website />
-		<source>https://github.com/Atari Corp./script.skin.helper.colorpicker</source>
+		<source>https://github.com/marcelveldt/script.skin.helper.colorpicker</source>
 	</extension>
-</addon><addon id="script.skin.helper.backgrounds" name="Skin Helper Service Backgrounds" provider-name="Atari Corp." version="1.0.33">
+</addon><addon id="script.skin.helper.backgrounds" name="Skin Helper Service Backgrounds" provider-name="marcelveldt" version="1.0.33">
 	<requires>
 		<import addon="xbmc.python" version="2.13.0" />
 		<import addon="xbmc.addon" version="12.0.0" />
@@ -802,9 +809,9 @@
 		<license>GPL v2.0</license>
 		<forum>http://forum.kodi.tv/showthread.php?tid=235676</forum>
 		<website />
-		<source>https://github.com/Atari Corp./script.skin.helper.backgrounds</source>
+		<source>https://github.com/marcelveldt/script.skin.helper.backgrounds</source>
 	</extension>
-</addon><addon id="plugin.audio.spotify" name="Spotify" provider-name="Atari Corp." version="1.1.58">
+</addon><addon id="plugin.audio.spotify" name="Spotify" provider-name="marcelveldt" version="1.1.58">
     <requires>
         <import addon="xbmc.python" version="2.1.0" />
         <import addon="xbmc.addon" version="12.0.0" />
@@ -824,7 +831,7 @@
         <description>Requires a Spotify premium account.</description>
         <disclaimer>This product uses SPOTIFY(R) CORE but is not endorsed, certified or otherwise approved in any way by Spotify. Spotify is the registered trade mark of the Spotify Group.</disclaimer>
     </extension>
-</addon><addon id="script.module.musicbrainz" name="Musicbrainz NGS webservice python bindings" provider-name="Atari Corp." version="0.6.0">
+</addon><addon id="script.module.musicbrainz" name="Musicbrainz NGS webservice python bindings" provider-name="marcelveldt" version="0.6.0">
   <requires>
   <import addon="xbmc.python" version="2.24.0" />
   </requires>
@@ -833,10 +840,10 @@
     <summary>Python bindings for Musicbrainz' NGS webservice</summary>
     <description>Kodi module library for the Python bindings for Musicbrainz' NGS webservice developed by alastair.</description>
     <license>GNU GENERAL PUBLIC LICENSE Version 2</license>
-    <source>https://github.com/Atari Corp./script.module.musicbrainz</source>
+    <source>https://github.com/marcelveldt/script.module.musicbrainz</source>
     <platform>all</platform>
   </extension>
-</addon><addon id="skin.titan.jarvisbeta" name="Titan BETA for Kodi Jarvis" provider-name="Atari Corp.,mgonzales" version="3.6.129">
+</addon><addon id="skin.titan.jarvisbeta" name="Titan BETA for Kodi Jarvis" provider-name="marcelveldt,mgonzales" version="3.6.129">
 	<requires>
 		<import addon="xbmc.gui" version="5.10.0" />		
 		<import addon="script.skinshortcuts" version="0.6.5" />
@@ -882,7 +889,7 @@
 		<email />
 		<source />
 	</extension>
-</addon><addon id="skin.titan.kryptonbeta" name="Titan BETA for Kodi Krypton" provider-name="Atari Corp.,mgonzales" version="3.7.65">
+</addon><addon id="skin.titan.kryptonbeta" name="Titan BETA for Kodi Krypton" provider-name="marcelveldt,mgonzales" version="3.7.65">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0" />		
 		<import addon="script.skinshortcuts" version="0.6.5" />
@@ -926,7 +933,7 @@
 		<forum>http://forum.kodi.tv/forumdisplay.php?fid=212</forum>
 		<website>http://forum.kodi.tv/forumdisplay.php?fid=212</website>
 		<email />
-		<source>https://github.com/Atari Corp./skin.titan.kryptonbeta</source>
+		<source>https://github.com/marcelveldt/skin.titan.kryptonbeta</source>
         <assets>
             <icon>icon.png</icon>
             <fanart>fanart.jpg</fanart>
@@ -947,7 +954,7 @@
             https://trello.com/b/VPlkyvMp/titan-skin
         </news>
 	</extension>
-</addon><addon id="skin.titan.leiabeta" name="Titan BETA for Kodi Leia" provider-name="Atari Corp.,mgonzales" version="3.8.4">
+</addon><addon id="skin.titan.leiabeta" name="Titan BETA for Kodi Leia" provider-name="marcelveldt,mgonzales" version="3.8.4">
 	<requires>
 		<import addon="xbmc.gui" version="5.13.0" />		
 		<import addon="script.skinshortcuts" version="0.6.5" />
@@ -992,7 +999,7 @@
 		<forum>http://forum.kodi.tv/forumdisplay.php?fid=212</forum>
 		<website>http://forum.kodi.tv/forumdisplay.php?fid=212</website>
 		<email />
-		<source>https://github.com/Atari Corp./skin.titan.leiabeta</source>
+		<source>https://github.com/marcelveldt/skin.titan.leiabeta</source>
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
@@ -1013,7 +1020,7 @@
             https://trello.com/b/VPlkyvMp/titan-skin
         </news>
 	</extension>
-</addon><addon id="resource.images.backgroundoverlays.basic" name="Background Overlays Pack - Basic" provider-name="Atari Corp., mgonzales" version="1.0.0">
+</addon><addon id="resource.images.backgroundoverlays.basic" name="Background Overlays Pack - Basic" provider-name="marcelveldt, mgonzales" version="1.0.0">
 	<extension compile="false" point="kodi.resource.images" type="backgroundoverlays" />
 	<requires>
 		<import addon="kodi.resource" version="1.0.0" />
@@ -1023,7 +1030,7 @@
 		<description lang="en">Pack of images that can be used as background overlay</description>
 		<platform>all</platform>
 	</extension>
-</addon><addon id="plugin.audio.squeezebox" name="Squeezebox for Kodi" provider-name="Atari Corp." version="1.0.19">
+</addon><addon id="plugin.audio.squeezebox" name="Squeezebox for Kodi" provider-name="marcelveldt" version="1.0.19">
 	<requires>
 		<import addon="xbmc.python" version="2.13.0" />
 		<import addon="xbmc.addon" version="12.0.0" />
@@ -1044,9 +1051,9 @@
 		<license>Apache v2.0</license>
 		<forum />
 		<website />
-		<source>https://github.com/Atari Corp./plugin.audio.squeezebox</source>
+		<source>https://github.com/marcelveldt/plugin.audio.squeezebox</source>
 	</extension>
-</addon><addon id="plugin.audio.roon" name="Roon Control for Kodi" provider-name="Atari Corp." version="1.0.1">
+</addon><addon id="plugin.audio.roon" name="Roon Control for Kodi" provider-name="marcelveldt" version="1.0.1">
 	<requires>
 		<import addon="xbmc.python" version="2.13.0" />
 		<import addon="xbmc.addon" version="12.0.0" />
@@ -1064,9 +1071,9 @@
 		<license>Apache v2.0</license>
 		<forum />
 		<website />
-		<source>https://github.com/Atari Corp./plugin.audio.roon</source>
+		<source>https://github.com/marcelveldt/plugin.audio.roon</source>
 	</extension>
-</addon><addon id="script.module.cherrypy" name="CherryPy Kodi module" provider-name="Atari Corp., CherryPy Team" version="11.0.1">
+</addon><addon id="script.module.cherrypy" name="CherryPy Kodi module" provider-name="marcelveldt, CherryPy Team" version="11.0.1">
     <requires>
         <import addon="xbmc.python" version="2.24.0" />
         <import addon="script.module.six" version="1.9.0" />
@@ -1079,10 +1086,10 @@
             CherryPy is now more than ten years old and it is has proven to be very fast and stable. It is being used in production by many sites, from the simplest to the most demanding.
         </description>
         <license>BSD</license>
-        <source>https://github.com/Atari Corp./script.module.cherrypy</source>
+        <source>https://github.com/marcelveldt/script.module.cherrypy</source>
         <platform>all</platform>
     </extension>
-</addon><addon id="script.tv.show.next.aired" name="TV Show - Next Aired" provider-name="Atari Corp." version="7.0.1">
+</addon><addon id="script.tv.show.next.aired" name="TV Show - Next Aired" provider-name="WayneD,marcelveldt" version="7.0.1">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
         <import addon="script.module.thetvdb" version="1.0.20" />
@@ -1152,10 +1159,7 @@
 		<platform>all</platform>
 		<license>GPL v2.0</license>
 		<forum>http://forum.xbmc.org/showthread.php?tid=186090</forum>
-		<website>http://github.com/Atari Corp./script.tv.show.next.aired</website>
-		<source>https://github.com/Atari Corp./script.tv.show.next.aired.git</source>
+		<website>http://github.com/marcelveldt/script.tv.show.next.aired</website>
+		<source>https://github.com/marcelveldt/script.tv.show.next.aired.git</source>
 	</extension>
 </addon>
-</addons>
-
-  
