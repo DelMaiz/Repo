@@ -224,7 +224,7 @@
 </addon>
 
 
-<addon id="skin.atari" version="1.0.2" name="Atari" provider-name="Atari Corp.">
+<addon id="skin.atari" version="1.0.1" name="Atari" provider-name="Atari Corp.">
     <requires>
         <import addon="xbmc.gui" version="5.14.0" />
         <import addon="script.skinshortcuts" version="0.4.0" />
@@ -318,7 +318,7 @@
 </addon>
 
 
-<addon id="plugin.program.atariwizard" name="Atari Wizard" version="1.0.2" provider-name="Atari Corp">
+<addon id="plugin.program.atariwizard" name="Atari Wizard" version="1.0.1" provider-name="Atari Corp.">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
