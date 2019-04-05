@@ -133,33 +133,6 @@
 </addon>
 
 
-<addon id="plugin.video.tvatari" name="Tv Atari" version="1.0.1" provider-name="Atari Corp.">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.livestreamer" />
-    <import addon="script.module.requests" />
-    <import addon="script.module.routing" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="addon.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en_gb">Tv Atari</summary>
-    <description lang="en_gb">Tv Atari</description>
-    <disclaimer lang="en_gb"></disclaimer>
-    <icon>icon.png</icon>
-    <fanart>fanart.jpg</fanart>
-    <language></language>
-    <platform>all</platform>
-    <license></license>
-    <forum></forum>
-    <website></website>
-    <email></email>
-    <source></source>
-  </extension>
-</addon>
-
-
 <addon id="plugin.video.cineatari" name="Cine Atari" version="1.0.1" provider-name="Atari Corp.">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
