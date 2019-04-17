@@ -19,7 +19,7 @@
 </addon>
 
 
-<addon id="plugin.video.alfa" name="Alfa" version="1.0.1" provider-name="Atari Corp.">
+<addon id="plugin.video.alfa" name="Alfa" version="1.0.2" provider-name="Atari Corp.">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.libtorrent" optional="true"/>
@@ -37,7 +37,21 @@
       <screenshot>resources/media/themes/ss/3.jpg</screenshot>
       <screenshot>resources/media/themes/ss/4.jpg</screenshot>
     </assets>
-      <news></news>
+      <news>[B]Estos son los cambios para esta versión:[/B]
+      [COLOR green][B]Arreglos[/B][/COLOR]
+      ¤ animeshd               ¤ gamovideo             ¤ elitetorrent
+      ¤ newpct1                  ¤ cinetux                    ¤ asialiveaction
+      ¤ gnula                       ¤ fembed                   ¤ hdfilmologia
+      ¤ gvideo                     ¤ vidlox                       ¤ javtasty
+      ¤ qwertyy
+
+      [COLOR green][B]Novedades[/B][/COLOR]
+      ¤ watchseries        ¤ xstreamcdn           ¤ videobb
+      ¤ animespace        ¤ tvanime
+ 
+      Agradecimientos a @shlibidon por colaborar con esta versión
+      
+    </news>
     <description lang="es">Navega con Kodi por páginas web para ver sus videos de manera fácil.</description>
     <summary lang="en">Browse web pages using Kodi</summary>
     <description lang="en">Browse web pages using Kodi, you can easily watch their video content.</description>
@@ -47,7 +61,7 @@
     <forum>foro</forum>
     <website>web</website>
     <email>my@email.com</email>
-    <source>https://github.com/DelMaiz/Alfa</source>
+    <source>https://github.com/alfa-addon/addon</source>
   </extension>
   <extension point="xbmc.service" library="videolibrary_service.py" start="login|startup">
   </extension>
