@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.program.atariwizard" name="Atari Wizard" version="1.0.1" provider-name="Atari Corp.">
+<addon id="plugin.program.atariwizard" name="Atari [COLOR orange]Wizard[/COLOR]" version="1.0.1" provider-name="Atari Corp.">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
@@ -8,8 +8,8 @@
   </extension>
   <extension point="xbmc.service" library="startup.py" start="startup" />
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">Atari Wizard</summary>
-    <description lang="en">Kodi Build por Atari Corp.</description>
+    <summary lang="en">Atari [COLOR orange]Wizard[/COLOR]</summary>
+    <description lang="en">Build para Kodi 17 y 18</description>
     <platform>all</platform>
 	  <assets>
 		<icon>icon.gif</icon>
