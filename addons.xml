@@ -1,21 +1,63 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
 
-<addon id="repository.atari" name="[COLOR gold]Atari Corp.[/COLOR] Repo" version="1.0.1" provider-name="Atari Corp.">
-    <requires>
-        <import addon="xbmc.addon" version="12.0.0"/>
-    </requires>
-    <extension point="xbmc.addon.repository" name="Atari Repo">
-        <info>https://github.com/DelMaiz/Repo/raw/master/addons.xml</info>
-        <checksum>https://github.com/DelMaiz/Repo/raw/master/addons.xml.md5</checksum>
-        <datadir zip="true">https://github.com/DelMaiz/Repo/raw/master</datadir>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>Repositorio para Atari</summary>
-        <description></description>
-        <disclaimer>The owners and submitters to this repository do not host or distribute any of the content displayed by these addons nor do they have any affiliation with the content providers.</disclaimer>
-        <platform>all</platform>
-    </extension>
+
+<addon id="plugin.program.atariwizard" name="Atari [COLOR orange]Wizard[/COLOR]" version="1.0.1" provider-name="Atari Corp.">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.service" library="startup.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Atari [COLOR orange]Wizard[/COLOR]</summary>
+    <description lang="en">Build para Kodi 17 y 18</description>
+    <platform>all</platform>
+	  <assets>
+		<icon>icon.gif</icon>
+	  </assets>
+  </extension>
+</addon>
+
+
+<addon id="plugin.program.playatari" name="Play" version="1.0.1" provider-name="Atari Corp.">
+  <requires>
+    <import addon="xbmc.python" version="2.25.0"/>
+    <import addon="script.module.dateutil"/>
+    <import addon="script.module.elementtree"/>
+    <import addon="script.module.kodi-six"/>
+    <import addon="script.module.requests"/>
+    <import addon="script.module.routing"/>
+    <import addon="plugin.video.youtube"/>
+    <import addon="vfs.libarchive" optional="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video game</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <!-- <reuselanguageinvoker>false</reuselanguageinvoker> -->
+    <platform>all</platform>
+    <summary lang="en_GB">Play</summary>
+    <description lang="en_GB">The Play (IAGL) is a FREE Kodi addon that will browse and launch games available from the Internet</description>
+    <summary lang="es_ES">Play</summary>
+    <description lang="es_ES">Play (IAGL) es un complemento gratuito para Kodi que explorará y lanzará juegos disponibles en Internet</description>
+    <summary lang="es_MX">Play</summary>
+    <description lang="es_MX">Play (IAGL) es un complemento gratuito para Kodi que explorará y lanzará juegos disponibles en Internet</description>
+    <license>CC BY-SA 4.0, GNU GENERAL PUBLIC LICENSE Version 2.0</license>
+    <forum>http://forum.kodi.tv/showthread.php?tid=231339</forum>
+    <source>https://github.com/DelMaiz/plugin.program.playatari</source>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+      <screenshot>support/media/screen1.jpg</screenshot>
+      <screenshot>support/media/screen2.jpg</screenshot>
+      <screenshot>support/media/screen3.jpg</screenshot>
+      <screenshot>support/media/screen4.jpg</screenshot>
+      <screenshot>support/media/screen5.jpg</screenshot>
+      <screenshot>support/media/screen6.jpg</screenshot>
+    </assets>
+  </extension>
 </addon>
 
 
@@ -65,6 +107,48 @@
   </extension>
 </addon>
 
+
+<addon id="plugin.video.atari"
+       name="Atari"
+       version="1.0.1"
+       provider-name="Atari Corp.">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.liveresolver" version="0.1.24" optional="true"/>
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" />
+    <import addon="script.module.urlresolver" />
+	<import addon="script.module.simplejson" />
+    <import addon="script.module.livestreamer" optional="true"/>
+    <import addon="script.module.pyamf" optional="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  
+   <extension point="xbmc.addon.repository" name="Mi repositorio">
+        <info>https://raw.githubusercontent.com/DelMaiz/Repo/master/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/DelMaiz/Repo/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/DelMaiz/Repo/master/</datadir>
+    </extension>
+	  <assets>
+		<icon>icon.png</icon>
+		<fanart>fanart.jpg</fanart>
+	  </assets>
+
+
+  <extension point="xbmc.addon.metadata">
+    <summary>Atari- provider Atari Corp."</summary>
+    <description>Este addon no contiene enlaces propios,son recopilaciones de la red, solo se facilita el acesso a esas webs, estas webs son las responsables de los contenidos
+    </description>
+    <platform>all</platform>
+  </extension>
+</addon>
 
 
 <addon id="plugin.video.beta"
@@ -119,6 +203,22 @@
 </addon>
 
 
+<addon id="plugin.video.f4mTester" name="f4mTester" version="2.7.2" provider-name="Shani">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.video.F4mProxy" version="2.7.1"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>f4mTester</summary>
+        <description></description>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+
 <addon id="plugin.video.tvalacarta"
     name="tvalacarta"
     version="7.0.0"
@@ -146,43 +246,82 @@
 </addon>
 
 
-<addon id="plugin.program.playatari" name="Play" version="1.0.1" provider-name="Atari Corp.">
+<addon id="repository.atari" name="[COLOR gold]Atari Corp.[/COLOR] Repo" version="1.0.1" provider-name="Atari Corp.">
+    <requires>
+        <import addon="xbmc.addon" version="12.0.0"/>
+    </requires>
+    <extension point="xbmc.addon.repository" name="Atari Repo">
+        <info>https://github.com/DelMaiz/Repo/raw/master/addons.xml</info>
+        <checksum>https://github.com/DelMaiz/Repo/raw/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://github.com/DelMaiz/Repo/raw/master</datadir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Repositorio para Atari</summary>
+        <description></description>
+        <disclaimer>The owners and submitters to this repository do not host or distribute any of the content displayed by these addons nor do they have any affiliation with the content providers.</disclaimer>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+
+<addon id="script.module.liveresolver" 
+     name="LiveResolver" 
+     version="0.1.50" 
+     provider-name="Atari Corp.">
   <requires>
-    <import addon="xbmc.python" version="2.25.0"/>
-    <import addon="script.module.dateutil"/>
-    <import addon="script.module.elementtree"/>
-    <import addon="script.module.kodi-six"/>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
     <import addon="script.module.requests"/>
-    <import addon="script.module.routing"/>
-    <import addon="plugin.video.youtube"/>
-    <import addon="vfs.libarchive" optional="true"/>
+    <import addon="script.module.addon.common" version="2.0.0" />
+
   </requires>
-  <extension point="xbmc.python.pluginsource" library="addon.py">
-    <provides>video game</provides>
-  </extension>
+  <extension point="xbmc.python.module" library="lib" />
   <extension point="xbmc.addon.metadata">
-    <!-- <reuselanguageinvoker>false</reuselanguageinvoker> -->
     <platform>all</platform>
-    <summary lang="en_GB">Play</summary>
-    <description lang="en_GB">The Play (IAGL) is a FREE Kodi addon that will browse and launch games available from the Internet</description>
-    <summary lang="es_ES">Play</summary>
-    <description lang="es_ES">Play (IAGL) es un complemento gratuito para Kodi que explorará y lanzará juegos disponibles en Internet</description>
-    <summary lang="es_MX">Play</summary>
-    <description lang="es_MX">Play (IAGL) es un complemento gratuito para Kodi que explorará y lanzará juegos disponibles en Internet</description>
-    <license>CC BY-SA 4.0, GNU GENERAL PUBLIC LICENSE Version 2.0</license>
-    <forum>http://forum.kodi.tv/showthread.php?tid=231339</forum>
-    <source>https://github.com/DelMaiz/plugin.program.playatari</source>
-    <assets>
-      <icon>icon.png</icon>
-      <fanart>fanart.jpg</fanart>
-      <screenshot>support/media/screen1.jpg</screenshot>
-      <screenshot>support/media/screen2.jpg</screenshot>
-      <screenshot>support/media/screen3.jpg</screenshot>
-      <screenshot>support/media/screen4.jpg</screenshot>
-      <screenshot>support/media/screen5.jpg</screenshot>
-      <screenshot>support/media/screen6.jpg</screenshot>
-    </assets>
+    <summary lang="en">Resolve common live video host URL's to be playable in XBMC/Kodi + find links embeded in sites.</summary>
+    <description lang="en"></description>    
   </extension>
+</addon>
+
+
+<addon id="script.module.urlresolver" name="URLResolver" version="8.0.38" provider-name="Atari Corp.">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0" />
+        <import addon="plugin.video.youtube" optional="true" />
+        <import addon="script.module.python.twitch" optional="true" />
+        <import addon="script.module.cryptopy" version="1.2.6" optional="true" />
+        <import addon="plugin.video.gdrive" optional="true" />
+    </requires>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.python.pluginsource" library="lib/default.py" />
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">Resolve common video host URL's to be playable in XBMC/Kodi.</summary>
+        <summary lang="es">Resolver enlaces a videos de sitios populares para poder reproducirlos en XBMC/Kodi.</summary>
+        <summary lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju.</summary>
+        <summary lang="el">Επίλυση συνδέσμων κοινών εξυπηρετητών σε μορφή βίντεο ικανό για αναπαραγωγή στο XBMC/Kodi.</summary>
+        <description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
+        <description lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju, pojednostavnjuje razvoj priključaka za video dodatke koji zahtjevaju višestruke video izvore.</description>
+        <forum>https://www.tvaddons.co/forums</forum>
+        <website>https://www.tvaddons.co</website>
+    </extension>
+</addon>
+
+
+<addon id="script.video.F4mProxy" name="F4mProxy" version="2.8.8" provider-name="Shani">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0" />
+        <import addon="script.module.requests" />
+    </requires>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">Proxy for f4m</summary>
+        <description lang="en">Use this addon to play F4m v1 and v2 streams</description>
+    </extension>
 </addon>
 
 
@@ -218,183 +357,5 @@
     </extension>
 </addon>
 
-
-
-<addon id="plugin.video.quasar" name="Quasar" version="1.0.1" provider-name="Atari Corp.">
-    <requires>
-        <import addon="xbmc.addon" version="16.0.0" />
-        <import addon="xbmc.python" version="2.24.0" />
-        <import addon="repository.quasar" optional="true" />
-        <import addon="script.quasar.burst" optional="true" />
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="navigation.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.service" library="service.py" start="startup" />
-    <extension point="xbmc.python.module" library="resources/site-packages" />
-    <extension point="xbmc.subtitle.module" library="navigation.py" />
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en">Quasar: Torrent streaming</summary>
-        <description lang="en">Quasar is a torrent finding and streaming engine. It doesn't go on torrent websites for legal reasons. However, it calls specially crafted add-ons (called providers) that are installed separately.[CR]This project is a fork of the well known, but no longer maintained Pulsar project from steeve.</description>
-        <language>en el es de fi fr he hr it nl pt ro sk</language>
-        <platform>all</platform>
-        <website>https://github.com//DelMaiz/Quasar</website>
-        <source>https://github.com//DelMaiz/Quasar</source>
-        <forum>http://forum.kodi.tv/showthread.php?tid=257967</forum>
-        <license>Non commercial. See https://github.com/scakemyer/plugin.video.quasar/blob/master/LICENSE</license>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-            <screenshot>resources/screenshots/home.jpg</screenshot>
-            <screenshot>resources/screenshots/movies.jpg</screenshot>
-            <screenshot>resources/screenshots/webui.png</screenshot>
-        </assets>
-    </extension>
-</addon>
-
-
-<addon id="program.plexus"
-       name="Plexus"
-       version="0.1.7"
-       provider-name="enen92, TVAddons, RonnieHD">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.requests" />
-  </requires>
-  <extension point="xbmc.python.pluginsource"
-            library="default.py">
-        <provides>executable</provides>
-  </extension>
-  
-  <extension point="xbmc.addon.metadata">
-    <summary>SopCast and AceStream for Kodi</summary>
-    <description lang="en">Plexus - Any complex structure containing an intricate network of parts. Plexus brings native peer-to-peer support (AceStream and SopCast) for Kodi Entertainment Center for several platforms.[CR][CR]Documentation: (missing)</description>
-    <description lang="pt">Plexus - Uma estrutura complexa constituída por uma rede de partes. O Plexus adiciona suporte peer-to-peer nativo (AceStream e Sopcast) ao Kodi Entertainment Center para várias plataformas.[CR][CR]Documentação: (em falta)</description>
-    <description lang="es">Plexus - Una estructura compleja conteniendo una intrincada red de partes. Plexus añade soporte nativo peer-to-peer (AceStream y SopCast) al Centro de Entretenimiento Kodi para varias plataformas.[CR][CR]Documentacion: (falta)</description>
-	<disclaimer lang="en">The author does not host nor distribute any of the content you may watch using this addon. The author has no part in the development of any included technologies. When seeking help in Kodi's forum please respect rules (http://kodi.wiki/view/Forum_rules).</disclaimer>
-    <disclaimer lang="pt">Os autores não alojam nem distribuem nenhum do conteúdo que poderá ser reproduzido a partir deste addon. Os autores não têm qualquer parte no desenvolvimento de qualquer uma das tecnologias. Se procurar ajuda no fórum oficial do Kodi por favor respeite as regras do fórum (http://kodi.wiki/view/Forum_rules).</disclaimer>
-   	<disclaimer lang="es">El autor no aloja ni distribuye cualquier contenido que ud. pudiera reproducir usando este addon. El autor no tiene participacion en el desarrollo de cualquier tecnologia incluida. Cuando requiera ayuda en el foro de Kodi por favor respete las reglas (http://kodi.wiki/view/Forum_rules).</disclaimer>
-    <platform>all</platform>
-  </extension>
-</addon>
-
-
-<addon id="plugin.program.atariwizard" name="Atari [COLOR orange]Wizard[/COLOR]" version="1.0.1" provider-name="Atari Corp.">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.service" library="startup.py" start="startup" />
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Atari [COLOR orange]Wizard[/COLOR]</summary>
-    <description lang="en">Build para Kodi 17 y 18</description>
-    <platform>all</platform>
-	  <assets>
-		<icon>icon.gif</icon>
-	  </assets>
-  </extension>
-</addon>
-
-
-<addon id="script.module.urlresolver" name="URLResolver" version="8.0.38" provider-name="Atari Corp.">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0" />
-        <import addon="plugin.video.youtube" optional="true" />
-        <import addon="script.module.python.twitch" optional="true" />
-        <import addon="script.module.cryptopy" version="1.2.6" optional="true" />
-        <import addon="plugin.video.gdrive" optional="true" />
-    </requires>
-    <extension point="xbmc.python.module" library="lib" />
-    <extension point="xbmc.python.pluginsource" library="lib/default.py" />
-    <extension point="xbmc.addon.metadata">
-        <platform>all</platform>
-        <summary lang="en">Resolve common video host URL's to be playable in XBMC/Kodi.</summary>
-        <summary lang="es">Resolver enlaces a videos de sitios populares para poder reproducirlos en XBMC/Kodi.</summary>
-        <summary lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju.</summary>
-        <summary lang="el">Επίλυση συνδέσμων κοινών εξυπηρετητών σε μορφή βίντεο ικανό για αναπαραγωγή στο XBMC/Kodi.</summary>
-        <description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
-        <description lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju, pojednostavnjuje razvoj priključaka za video dodatke koji zahtjevaju višestruke video izvore.</description>
-        <forum>https://www.tvaddons.co/forums</forum>
-        <website>https://www.tvaddons.co</website>
-    </extension>
-</addon>
-
-
-<addon id="plugin.video.f4mTester" name="f4mTester" version="2.7.2" provider-name="Shani">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0"/>
-        <import addon="script.video.F4mProxy" version="2.7.1"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>f4mTester</summary>
-        <description></description>
-        <platform>all</platform>
-    </extension>
-</addon>
-
-
-<addon id="script.video.F4mProxy" name="F4mProxy" version="2.8.8" provider-name="Shani">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0" />
-        <import addon="script.module.requests" />
-    </requires>
-    <extension point="xbmc.python.module" library="lib" />
-    <extension point="xbmc.python.pluginsource" library="addon.py">
-        <provides>executable</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <platform>all</platform>
-        <summary lang="en">Proxy for f4m</summary>
-        <description lang="en">Use this addon to play F4m v1 and v2 streams</description>
-    </extension>
-</addon>
-
-
-<addon id="script.module.liveresolver" 
-     name="LiveResolver" 
-     version="0.1.50" 
-     provider-name="Atari Corp.">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.requests"/>
-    <import addon="script.module.addon.common" version="2.0.0" />
-
-  </requires>
-  <extension point="xbmc.python.module" library="lib" />
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary lang="en">Resolve common live video host URL's to be playable in XBMC/Kodi + find links embeded in sites.</summary>
-    <description lang="en"></description>    
-  </extension>
-</addon>
-
-
-<addon id="plugin.video.nbaondemand" name="NBA On-demand" version="2.0.7" provider-name="lambda,enen92,jsergio">
-	<requires>
-		<import addon="xbmc.python" version="2.1.0"/>
-		<import addon="script.module.simplejson" optional="true"/>
-		<import addon="script.module.parsedom" optional="true"/>
-		<import addon="plugin.video.youtube" optional="true"/>
-		<import addon="script.module.urlresolver" version="3.0.24"/>
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="default.py">
-		<provides>video</provides>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">NBA on demand</summary>
-		<description lang="en">Visit TVADDONS.ag for support</description>
-		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
-		<forum>http://forums.tvaddons.ag/forums/148-lambda-s-xbmc-addons</forum>
-		<source>https://offshoregit.com/lambda81/lambda-addons</source>
-		<website>https://offshoregit.com/lambda81/</website>
-		<platform>all</platform>
-	</extension>
-</addon>
 
 </addons>
