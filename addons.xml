@@ -61,11 +61,13 @@
 </addon>
 
 
-<addon id="plugin.video.alfa" name="Alfa" version="2.8.19" provider-name="Alfa Addon">
+<addon id="plugin.video.alfa" name="Alfa" version="2.8.24" provider-name="Alfa Addon">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.libtorrent" optional="true"/>
     <import addon="script.module.requests"/>
+    <import addon="script.module.beautifulsoup4" version="4.5.3"/>
+    <import addon="script.module.html5lib" version="0.999.0"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video</provides>
@@ -74,7 +76,7 @@
     <summary lang="es">Navega con Kodi por páginas web.</summary>
     <assets>
       <icon>logo2.png</icon>
-      <fanart>fanart-2019.jpg</fanart>
+      <fanart>fanart1.jpg</fanart>
       <screenshot>resources/media/themes/ss/1.jpg</screenshot>
       <screenshot>resources/media/themes/ss/2.jpg</screenshot>
       <screenshot>resources/media/themes/ss/3.jpg</screenshot>
@@ -83,14 +85,11 @@
       <news>[B]Estos son los cambios para esta versión:[/B]
 
       [COLOR green][B]Arreglos[/B][/COLOR]
-      ¤ mejortorrent                 ¤ grantorrent         ¤ newpct1
-      ¤ allcalidad                        ¤ hdfull                   ¤ seriespapaya
-      ¤ Qseries                           ¤ PeliculonHd        ¤ Cinetux
-      ¤ Canalpelis                      ¤ Pepecine              ¤ Cuevana2espanol
-      ¤ Pelisgratis                      ¤ Cuevana3            ¤ Cuevana2
-      ¤ +18
-      
-     Agradecimentos a @sincasios por colaborar con ésta versión
+      ¤ serieslan                       ¤ hdfull                          ¤ megadede
+      ¤ dontorrent                   ¤ newpct1                     ¤ todopeliculas
+      ¤ pelismagnet                ¤ pelisplus                    ¤ tupelihd
+      ¤ descargacineclasico
+
     </news>
     <description lang="es">Navega con Kodi por páginas web para ver sus videos de manera fácil.</description>
     <summary lang="en">Browse web pages using Kodi</summary>
@@ -104,44 +103,6 @@
     <source>https://github.com/alfa-addon/addon</source>
   </extension>
   <extension point="xbmc.service" library="videolibrary_service.py" start="login|startup">
-  </extension>
-</addon>
-
-
-<addon id="plugin.video.Armageddon"
-       name="Armageddon"
-       version="0.0.3"
-       provider-name="Atari Corp.">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.beautifulsoup4" />
-    <import addon="script.module.requests" />
-    <import addon="script.module.httplib2" />
-    <import addon="script.module.liveresolver" version="0.1.24" optional="true"/>
-    <import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="plugin.video.youtube" optional="true" />
-    <import addon="script.module.urlresolver" />
-    <import addon="script.module.simplejson" />    
-     <import addon="script.module.livestreamer" optional="true"/>
-     <import addon="script.module.pyamf" optional="true"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="addon.py">
-    <provides>video</provides>
-  </extension>
-
-  
-  <extension point="xbmc.addon.metadata">
-  <summary lang="en">Bienvenidos Al Armageddon</summary>
-    <language>en</language>
-    <description lang="en">CANALES RETRANSMITIDOS POR INTERNET Y OTRAS PLATAFORMAS </description>
-    <disclaimer>ESTE ADDON NO CONTIENE ENLACES PROPIOS,SON RECOPILACIONES DE LA RED, SOLO SE CONECTA  A ESAS WEBS, ESTAS WEBS SON LAS RESPONSABLES DE LOS CONTENIDOS</disclaimer>
-     <platform>all</platform>
-        <assets>
-		<icon>Armageddon.png</icon>
-		<fanart>Back.jpg</fanart>
-	  </assets>
   </extension>
 </addon>
 
