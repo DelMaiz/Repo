@@ -61,7 +61,7 @@
 </addon>
 
 
-<addon id="plugin.video.alfa" name="Alfa" version="2.8.27" provider-name="Alfa Addon">
+<addon id="plugin.video.alfa" name="Alfa" version="2.8.30" provider-name="Alfa Addon">
   <requires>
     <import addon="xbmc.python" version="2.25.0"/>
     <import addon="script.module.libtorrent" optional="true"/>
@@ -75,8 +75,8 @@
   <extension point="xbmc.addon.metadata">
     <summary lang="es">Navega con Kodi por páginas web.</summary>
     <assets>
-      <icon>logo2.png</icon>
-      <fanart>fanart1.jpg</fanart>
+      <icon>resources/logo2.png</icon>
+      <fanart>resources/fanart1.jpg</fanart>
       <screenshot>resources/media/themes/ss/1.jpg</screenshot>
       <screenshot>resources/media/themes/ss/2.jpg</screenshot>
       <screenshot>resources/media/themes/ss/3.jpg</screenshot>
@@ -85,13 +85,11 @@
       <news>[B]Estos son los cambios para esta versión:[/B]
 
       [COLOR green][B]Arreglos[/B][/COLOR]
-      ¤ Grantorrent                  ¤ PeliculonHd             ¤ Animeflv
-      ¤ Inkaseries                     ¤ Cineasia                    ¤ Homecine
-      ¤ Seriesblanco                ¤ Seriesmetro              ¤ Erai-raws
-      ¤ HDfull                            ¤ +18    
-
-      [COLOR green][B]Novedades[/B][/COLOR]
-      ¤ MasPeliculas                   ¤ DesTotal
+      ¤ subtorrents                  ¤ CineCalidad             ¤ PoseidonHD 
+      ¤ Maspeliculas                ¤ Hitokin                      ¤ Pelis24
+      ¤ Pelisvips                        ¤ Cuevana2                ¤ Seriespapaya
+      ¤ Peliculonhd                  ¤ Pelisgratis               ¤ Pelisplus
+      ¤ +18    
     </news>
     <description lang="es">Navega con Kodi por páginas web para ver sus videos de manera fácil.</description>
     <summary lang="en">Browse web pages using Kodi</summary>
@@ -205,8 +203,8 @@
 
 
 <addon id="plugin.video.cristalazul"
-       name="CRISTAL AZUL"
-       version="0.0.4"
+       name="Cristalazul"
+       version="0.0.5"
        provider-name="Atari Corp.">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -228,12 +226,13 @@
   </extension>
 	
   <extension point="xbmc.addon.metadata">
-    <summary>creado por picapau, lourdes, supertopo y luisma</summary>
+    <summary>creado por Atari Corp.</summary>
     <description>ESTE ADDON NO CONTIENE ENLACES PROPIOS,SON RECOPILACIONES DE LA RED, SOLO SE FACILITA EL ACESSO A ESAS WEBS, ESTAS WEBS SON LAS RESPONSABLES DE LOS CONTENIDOS
 	</description>
     <platform>all</platform>
 	  <assets>
 		<icon>icon.png</icon>
+		<fanart>fanart.jpg</fanart>
 	  </assets>
   </extension>
 </addon>
