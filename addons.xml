@@ -178,10 +178,6 @@
     <description>ESTE ADDON NO CONTIENE ENLACES PROPIOS,SON RECOPILACIONES DE LA RED, SOLO SE FACILITA EL ACESSO A ESAS WEBS, ESTAS WEBS SON LAS RESPONSABLES DE LOS CONTENIDOS
 	</description>
     <platform>all</platform>
-	  <assets>
-		<icon>icon.png</icon>
-		<fanart>fanart.jpg</fanart>
-	  </assets>
   </extension>
 </addon>
 
