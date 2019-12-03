@@ -61,7 +61,7 @@
 </addon>
 
 
-<addon id="plugin.video.alfa" name="Alfa" version="2.9.1" provider-name="Alfa Addon">
+<addon id="plugin.video.alfa" name="Alfa" version="2.9.3" provider-name="Alfa Addon">
   <requires>
     <import addon="xbmc.python" version="2.25.0"/>
     <import addon="script.module.libtorrent" optional="true"/>
